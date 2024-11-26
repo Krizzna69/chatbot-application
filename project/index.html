@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="new-chat">
+                <button id="newChatBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 4V20M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    New chat
+                </button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-screen" id="welcomeScreen">
+                   
+                    <h1>Hello, I'm GINGER</h1>
+                    <div class="example-prompts">
+                        <button class="prompt-btn">Help me write a story about space exploration</button>
+                        <button class="prompt-btn">Explain quantum computing to a beginner</button>
+                        <button class="prompt-btn">Create a workout plan for beginners</button>
+                        <button class="prompt-btn">Help me learn about artificial intelligence</button>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages"></div>
+            </div>
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea id="userInput" placeholder="Enter your message here..." rows="1"></textarea>
+                    <button id="sendBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="disclaimer">Gemini may display inaccurate info, including about people, so double-check its responses.</p>
+            </div>
+        </main>
+    </div>
+    <script src="config.js"></script>
+    <script src="chat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
